@@ -1,0 +1,12 @@
+// Program to create a 2 D array.
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[4][5];
+    arr[1][1] = 5;
+    arr[3][4] = 10;
+    arr[1][2] = 5;
+    cout << arr[1][2]<<endl;
+    cout << arr[3][4]<<endl;
+    return 0;
+}

@@ -1,0 +1,13 @@
+// Program to create a 1 D array.
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[10];
+    cout<<"Enter elements in the array : ";
+    cin>> arr[0]>> arr[1]>> arr[2] >> arr[3] >> arr[4] >> arr[5] >> arr[6] >> arr[7] >> arr[8] >> arr[9];
+    cout << arr[0]<<" "<< arr[1]<<" "<< arr[2]<<" " << arr[3]<<" " << arr[4]<<" " << arr[5]<<" " << arr[6]<<" " << arr[7]<<" " << arr[8]<<" " << arr[9] << endl;
+    arr[4] += 10;
+    arr[7] = 23;
+    cout << arr[0]<<" "<< arr[1]<<" "<< arr[2]<<" " << arr[3]<<" " << arr[4]<<" " << arr[5]<<" " << arr[6]<<" " << arr[7]<<" " << arr[8]<<" " << arr[9] << endl;
+    return 0;
+}

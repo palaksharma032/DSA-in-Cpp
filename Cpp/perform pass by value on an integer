@@ -1,0 +1,20 @@
+// Program to perform pass by value on an integer.
+#include<iostream>
+using namespace std;
+void integer ( int num ){
+    cout << "Inside function: " << num << "\n";
+    num+=1;
+    cout << "After +1: " << num << "\n";
+    num+=2;
+    cout << "After +2: " << num << "\n";
+    num+=3;
+    cout << "After +3: " << num << "\n";
+}
+int main(){
+    int num;
+    cin >> num;
+    cout << "Before call: " << num << "\n";
+    integer(num);
+    cout << "After call: " << num << "\n";
+    return 0 ;
+}

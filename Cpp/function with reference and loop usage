@@ -1,0 +1,30 @@
+// C++ program demonstrating function with reference and loop usage
+
+#include <iostream>
+using namespace std;
+void doSomething(int &num) {
+    num += 10;
+}
+
+int main() {
+    int numbers[] = {1, 2, 3, 4, 5};
+    int size = sizeof(numbers) / sizeof(numbers[0]);
+
+    cout << "Original numbers: ";
+    for (int i = 0; i < size; i++) {
+        cout << numbers[i] << " ";
+    }
+    cout << endl;
+
+    for (int i = 0; i < size; i++) {
+        doSomething(numbers[i]); 
+    }
+
+    cout << "Numbers after calling doSomething: ";
+    for (int i = 0; i < size; i++) {
+        cout << numbers[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
